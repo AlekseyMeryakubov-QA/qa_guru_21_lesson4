@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GithubSearch {
+public class GithubSearchTest {
     static {
         ChromeOptions options = new ChromeOptions();
         options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
@@ -25,7 +25,7 @@ public class GithubSearch {
     }
 
     @Test
-    void jUnit5Test() {
+    void searchTextJUnit5Test() {
         open("https://github.com/selenide/selenide/");
 
         String textToFind = """ 
